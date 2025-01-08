@@ -7,27 +7,40 @@
     连接 Solana 与 BSC 智能代理的跨链基础设施
   </p>
 
-  <p>
-    <a href="https://github.com/xiaguinfra/backend/blob/main/LICENSE">
-      <img src="https://img.shields.io/badge/许可证-MIT-blue.svg" alt="许可证">
-    </a>
-    <a href="https://github.com/xiaguinfra/backend/stargazers">
-      <img src="https://img.shields.io/github/stars/xiaguinfra/backend" alt="GitHub 星标">
-    </a>
-    <a href="https://github.com/xiaguinfra/backend/network/members">
-      <img src="https://img.shields.io/github/forks/xiaguinfra/backend" alt="GitHub 分支">
-    </a>
-  </p>
-
   <h2>架构图</h2>
   <img src="信息图表.png" alt="架构图" width="800">
 
+  <h2>主要功能</h2>
+
+当前功能:
+- BSC 与 Solana 跨链桥接
+  - 基础资产转移
+  - 交易验证
+  - 状态同步
+
+计划功能:
+- 智能代理系统
+  - 自动化交易执行
+  - 多重签名验证
+  - 失败交易回滚
+  - 实时监控
+
+- 安全升级
+  - 多重签名保护
+  - 智能合约审计
+  - 自动风险控制
+
   <h2>目录结构</h2>
 
-backend/
+canyon/
 ├── 合约/                    # 智能合约
+│   ├── BSC/                # BSC智能合约
+│   └── Solana/            # Solana程序
 ├── 配置/                    # 配置文件
 ├── 源码/                    # 核心代码
+│   ├── 代理/               # 代理系统
+│   ├── 桥接/               # 桥接系统
+│   └── 工具/               # 工具函数
 └── 测试/                    # 测试文件
 
   <h2>技术栈</h2>
@@ -47,8 +60,8 @@ backend/
 - BSC 开发工具
 
 安装:
-git clone https://github.com/xiaguinfra/backend.git
-cd backend
+git clone https://github.com/xiaguinfra/canyon.git
+cd canyon
 npm install
 
 配置:
@@ -60,9 +73,6 @@ npm run dev
 
 测试:
 npm run test
-
-部署:
-npm run deploy
 
   <h2>链接</h2>
   
